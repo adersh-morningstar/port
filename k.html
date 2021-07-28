@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Tutorial</title>
+	<style>
+		body {
+  			background-color: black;
+		}
+		#main{
+			display:none;
+		}
+		#rev{
+		display:none;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	
+	
+	
+		<button type="button" id =  "prime" onclick=myFunction()>Click Me! to show the video 
+
+		</button>
+	
+	 <button id ="rev"   type="button" onclick="rev()">
+		Click Me! to hide the video
+	</button>
+	
+	<div  id ="main">
+			<iframe   class = "cat " width="100%" height="275" src="https://www.youtube.com/embed/oTwfHe4UHes?vq=hd720p&&autoplay=1&&mute=1&&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			</iframe>
+	
+			<iframe class = "cat "  width="100%" height="275" src="https://www.youtube.com/embed/sC8W5gVIwg8?vq=hd720p&&autoplay=1&&mute=1&&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+		</iframe>
+
+			<iframe class = "cat " width="100%" height="275" src="https://www.youtube.com/embed/-2pm9yPCiRg?vq=hd720p&&autoplay=1&&mute=1&&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			</iframe>
+
+			<iframe  class = "cat " width="100%" height="275" src="https://www.youtube.com/embed/jTx5GetgC-M?vq=hd720p&&autoplay=1&&mute=1&&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			</iframe>
+		
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/iOqPkwC7NAM?vq=hd720p&&autoplay=1&&mute=1&&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/rAXiWC-I5XA?vq=hd720p&&autoplay=1&&mute=1&&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+			?vq=hd720p&&autoplay=1&&mute=1&&controls=0
+	</div>
+
+	
+
+	<script>
+			function myFunction(){
+				console.log("234");
+				document.getElementById("main").style.display="block";
+				document.getElementById("rev").style.display="block";
+				document.getElementById("prime").style.display="none";
+		}
+		function rev(){
+			document.getElementById("main").style.display="none";
+			document.getElementById("rev").style.display="none";
+			document.getElementById("prime").style.display="block";
+		}
+	</script>
+</body>
+</html>	
+
+
+
+
+
