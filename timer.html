@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+ <html>
+   <head>
+      <title>Timer</title>
+      <style>
+       body {
+         background-color: linen;
+         }
+         div {
+          font-size: 40px;
+          
+           padding-top: 50px;
+           padding-right: 5px;
+           padding-bottom: 50px;
+           padding-left: 5px;
+           
+               }
+       
+
+
+
+      </style>
+        </head>
+          <body>
+   <div id="timer 1" >
+      <p1> remaining time: </p1>
+          <p1 id ='timer1'>
+              </p1>
+                 </div>
+                    <div id="timer 2" >
+                         <p1> time elapsed: </p1>
+                             <p1 id ='timer2'>
+                                 <p1>
+                                    </div>
+   <div id="percen t" >
+       <p1>  percentage: </p1>
+            <p1 id="percent" >
+                 <p1>
+                    </div>
+                    <script>
+var starter = new Date("dec 31, 2021 23:59:59").getTime(); 
+
+var deadline = new Date("march 31, 2024 19:59:59").getTime(); 
+
+var difference  = deadline - starter;
+
+var fonc = setInterval(function() { 
+var now = new Date().getTime(); 
+var past = now - starter;
+var t = deadline - now; 
+var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+var days1 = Math.floor(past/ (1000 * 60 * 60 * 24)); 
+var hours1 = Math.floor((past%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+var minutes1 = Math.floor((past% (1000 * 60 * 60)) / (1000 * 60)); 
+var seconds1 = Math.floor((past % (1000 * 60)) / 1000); 
+var X1 = days + "d "  
++ hours + "h " + minutes + "m " + seconds + "s "; 
+var X2 = days1 + "d "  
++ hours1 + "h " + minutes1 + "m " + seconds1 + "s "; 
+var bar1 = ((t/difference)*100);
+document.getElementById("timer1").innerHTML = X1; 
+document.getElementById("timer2").innerHTML = X2; 
+document.getElementById("percent").innerHTML = bar1; },1000);
+</script>
+</body>
+</html>
