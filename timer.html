@@ -5,6 +5,9 @@
    <head>
       <title>Timer</title>
       <link rel="shortcut icon" type="image/x-icon" href=" https://static.wikia.nocookie.net/debatesjungle/images/4/47/Kanna.png/revision/latest?cb=20200126185655 " />
+      
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"> 
+</script> 
 
       <style>
        body {
@@ -41,6 +44,11 @@
             <p1 id="percent" >
                  <p1>
                     </div>
+
+  
+
+<canvas id="myChart" width="900" height="400"></canvas> 
+
                     <script>
 var starter = new Date("dec 31, 2021 23:59:59").getTime(); 
 
@@ -69,7 +77,42 @@ var bar2 = (bar1 * 3.6);
 document.getElementById("timer1").innerHTML = X1; 
 document.getElementById("timer2").innerHTML = X2; 
 document.getElementById("angle").innerHTML = bar2;
-document.getElementById("percent").innerHTML = bar1; },1000);
+document.getElementById("percent").innerHTML = bar1; 
+
+var ctx = document.getElementById("myChart"); 
+var myChart = new Chart(ctx, { 
+
+  type: 'pie', 
+  data: { 
+    labels: ["time left", "time passed" ], 
+    datasets: [ 
+      { label: '# time', 
+        data: [(100-bar1),bar1], 
+        backgroundColor :['rgba(255, 99, 132, 0.2)', 
+                'rgba(54, 162, 235, 0.2)', 
+                'rgba(255, 206, 86, 0.2)', 
+               
+                ], 
+borderColor: [ 
+
+                'rgba(255,99,132,1)', 
+                'rgba(54, 162, 235, 1)',
+            ], 
+            borderWidth : 1 
+      } 
+    ] 
+  }, 
+  options: { 
+        scales: { 
+            yAxes: [{ 
+                ticks: { 
+                    beginAtZero:true 
+                } 
+            }] 
+        } 
+    } 
+    }); 
+},1000);
 </script>
 </body>
 </html>
