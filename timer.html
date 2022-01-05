@@ -48,7 +48,8 @@
   
 
 <canvas id="myChart" width="900" height="400"></canvas> 
-
+        <div  style = "visibility: visible; width:40px ; height: 50px" >
+        </div>
         <div id ="subt">
 
         </div>
@@ -122,7 +123,7 @@ var bar1 = ((t/difference)*100);
 var ctx = document.getElementById("myChart"); 
 var myChart = new Chart(ctx, { 
 
-  type: 'bar', 
+  type: 'donut', 
   data: { 
     labels: ["time passed", "time passed" ], 
     datasets: [ 
