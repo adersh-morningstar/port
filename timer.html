@@ -49,7 +49,11 @@
 
 <canvas id="myChart" width="900" height="400"></canvas> 
 
-                    <script>
+        <div id ="subt">
+
+        </div>
+
+            <script>
 var starter = new Date("dec 31, 2021 23:59:59").getTime(); 
 
 var deadline = new Date("march 31, 2024 19:59:59").getTime(); 
@@ -68,7 +72,18 @@ var days1 = Math.floor(past/ (1000 * 60 * 60 * 24));
 var hours1 = Math.floor((past%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
 var minutes1 = Math.floor((past% (1000 * 60 * 60)) / (1000 * 60)); 
 var seconds1 = Math.floor((past % (1000 * 60)) / 1000); 
-var X1 = days + "d "  
+
+
+
+var hrleft = ((days*24) + hours +(minutes/60) + (seconds*3600));
+var hrpassed =  ((days1*24) + hours1 +(minutes1/60) + (seconds1/3600));
+var secleft = hrleft *3600 ;
+var secpassed = hrpassed *3600;
+
+
+var time2 = "hours left :" + hrleft +" houre passed :" + hrpassed + "secondsleft:"  + secleft + "seconds passed :" + secpassed  ;
+
+var X1 = days + "d " 
 + hours + "h " + minutes + "m " + seconds + "s "; 
 var X2 = days1 + "d "  
 + hours1 + "h " + minutes1 + "m " + seconds1 + "s "; 
@@ -77,8 +92,32 @@ var bar1 = ((t/difference)*100);
 document.getElementById("timer1").innerHTML = X1; 
 document.getElementById("timer2").innerHTML = X2; 
 
+document.getElementById("subt").innerHTML = time2;
+
 document.getElementById("percent").innerHTML = bar1; 
 },1000);
+
+
+
+
+
+var starter = new Date("dec 31, 2021 23:59:59").getTime(); 
+
+var deadline = new Date("march 31, 2024 19:59:59").getTime(); 
+
+var difference  = deadline - starter;
+
+
+var x = setInterval(function() { 
+
+  
+var now = new Date().getTime(); 
+var past = now - starter;
+var t = deadline - now; 
+
+
+var bar1 = ((t/difference)*100);
+
 
 var ctx = document.getElementById("myChart"); 
 var myChart = new Chart(ctx, { 
