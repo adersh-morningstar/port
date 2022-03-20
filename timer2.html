@@ -56,8 +56,6 @@ var starter = new Date("jan 16, 2022 23:59:59").getTime();
 
 var deadline = new Date("dec 20, 2022 19:59:59").getTime(); 
 
-// var  deadline = new Date("december 31, 2024 19:59:59").getTime(); 
-// var starter = new Date("October 25, 2021 23:59:59").getTime(); 
 
 var difference  = deadline - starter;
 
@@ -82,18 +80,15 @@ var secleft = hrleft *3600 ;
 var secpassed = hrpassed *3600;
 
 
-//var time2 = "hours left :" +"\n"+ hrleft +'\n' +" hours passed :"+"\n" + hrpassed + '\n' +"secondsleft:" +"\n" + secleft + '\n'+ "seconds passed :" +"\n"+ secpassed  ;
-
 var X1 = days + "d " 
 + hours + "h " + minutes + "m " + seconds + "s "; 
 var X2 = days1 + "d "  
 + hours1 + "h " + minutes1 + "m " + seconds1 + "s "; 
 var bar1 = ((t/difference)*100);
-//var bar2 = (bar1 * 3.6);
+
 document.getElementById("timer1").innerHTML = X1; 
 document.getElementById("timer2").innerHTML = X2; 
 
-//document.getElementById("subt").innerHTML = time2;
 
 document.getElementById("percent").innerHTML = bar1; 
 },333);
@@ -101,9 +96,6 @@ document.getElementById("percent").innerHTML = bar1;
 
 
 
-//var starter = new Date("dec 31, 2021 23:59:59").getTime(); 
-
-// var deadline = new Date("march 31, 2024 19:59:59").getTime(); 
 
 var difference  = deadline - starter;
 
