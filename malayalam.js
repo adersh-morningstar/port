@@ -1,3 +1,4 @@
+try{
 var latt = document.getElementById("cat");
 var rat = latt.innerHTML;
 function adder(A){
@@ -210,3 +211,7 @@ document.addEventListener('keydown', (event) => {
         adder("ഢ");
        };
     });
+}
+catch(err){
+document.getElementById("cat").innerHTML = err.message;
+}
