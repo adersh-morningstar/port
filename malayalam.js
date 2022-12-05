@@ -5,7 +5,7 @@ function adder(A){
    };
 
 
-
+rat = rat + 'j';
 
 document.addEventListener('keydown', (event) => {
    if(event.key == " "   ){
