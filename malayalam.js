@@ -2,11 +2,11 @@ try{
 var latt = document.getElementById("cat");
 var rat = latt.innerHTML;
 function adder(A){
-   rat = rat＋A ;　
+   latt.innerHTML = latt.innerHTML＋A ;　
    };
 
 
-rat = rat + 'j';
+ document.getElementById("cat").innerhtml = rat + 'j';
 
 document.addEventListener('keydown', (event) => {
    if(event.key == " "   ){
