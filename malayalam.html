@@ -32,8 +32,11 @@ document.addEventListener('keydown', (event) => {console.log(event.shiftkey)});
  
 document.addEventListener('keydown', (event) => {
    if (event.key == "+"){
-       adder("\n ")
+       adder("\n ");
    };
+   if(event.key =="Backspace" ){
+     adder(" ");
+      }
    if(event.key == "l"   ){
  adder("ങ്ക")
       };
@@ -47,7 +50,7 @@ document.addEventListener('keydown', (event) => {
  adder("പ");
        };
      if(event.key== "r"){
- adder(" ന");
+ adder("ന");
        };
      if(event.key== "t"){
  adder("എ");
