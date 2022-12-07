@@ -37,7 +37,15 @@
         <pre id = "result"  style="font-size:5vw;" > fff </pre>
 
 <script>
-
+function addline(){
+   var sitt = document.getElementById("result").innerHTML;
+   var inpuno = 13;
+   var elz = sitt[-inpuno:];
+   var tes = elz.indexOf("\n");
+   if(tes == -1){
+       document.getElementById.innerHTML=("\n");
+     }   
+   }
 console.log(2)
 document.getElementById("result").innerHTML +='urirjj';
 //var tes1 = document.getElementByIde("result").innerHTML; 
