@@ -19,7 +19,7 @@
       height:80%;
       font-size:11;
       border-style: solid;
-      text-align: right;
+      text-align: left;
       border-width: 5px;
        }
 
@@ -39,7 +39,7 @@
 <script>
 function addline(){
    var sitt = document.getElementById("result").innerHTML;
-   var inpuno = 13;
+   var inpuno = 23;
    var elz = sitt[-inpuno:];
    var tes = elz.indexOf("\n");
    if(tes == -1){
@@ -55,6 +55,7 @@ function adder(A){
    var ader = matt + A;
    console.log(ader)
    console.log(ader); document.getElementById("result").innerHTML = ader;
+   addline();
 }
 adder("uru03gdjf");
 
