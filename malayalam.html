@@ -40,7 +40,7 @@
 function addline(){
    var sitt = document.getElementById("result").innerHTML;
    var inpuno = 23;
-   var elz = sitt[-inpuno:];
+   var elz = sitt.slice(-inpuno);
    var tes = elz.indexOf("\n");
    if(tes == -1){
       var matt = document.getElementById("result").innerHTML;
