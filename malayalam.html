@@ -37,6 +37,13 @@
         <pre id = "result"  style="font-size:5vw;" > fff </pre>
 
 <script>
+
+const debugg = false; // true 
+function debugger(a){
+ if(debugg){
+   console.log(a);
+  }
+}
 function addline(){
    var sitt = document.getElementById("result").innerHTML;
    var inpuno = 23;
@@ -45,20 +52,19 @@ function addline(){
    if(tes == -1){
       var elem = document.getElementById('result');
       elem.scrollTop = elem.scrollHeight;
-      console.log(elem.scrollTop);
+      debugger(elem.scrollTop);
       var matt = document.getElementById("result").innerHTML;
       var ader = matt + ("\n");
       document.getElementById("result").innerHTML = ader;
      }   
    }
-console.log(2)
+//debugger(2);
 document.getElementById("result").innerHTML +='urirjj';
-//var tes1 = document.getElementByIde("result").innerHTML; 
-//if(tes1 
+
 function adder(A){
    var matt = document.getElementById("result").innerHTML;
    var ader = matt + A;
-   console.log(ader);
+   //debugger(ader);
    document.getElementById("result").innerHTML = ader;
    addline();
 }
