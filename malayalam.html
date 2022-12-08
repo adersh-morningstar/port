@@ -43,7 +43,9 @@ function addline(){
    var elz = sitt[-inpuno:];
    var tes = elz.indexOf("\n");
    if(tes == -1){
-       document.getElementById.innerHTML=("\n");
+      var matt = document.getElementById("result").innerHTML;
+      var ader = matt + ("\n");
+      document.getElementById("result").innerHTML = ader;
      }   
    }
 console.log(2)
@@ -53,8 +55,8 @@ document.getElementById("result").innerHTML +='urirjj';
 function adder(A){
    var matt = document.getElementById("result").innerHTML;
    var ader = matt + A;
-   console.log(ader)
-   console.log(ader); document.getElementById("result").innerHTML = ader;
+   console.log(ader);
+   document.getElementById("result").innerHTML = ader;
    addline();
 }
 adder(" മലയാളം ");
