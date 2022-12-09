@@ -49,7 +49,8 @@ function addline(){
    var tes = elz.indexOf("\n");
    if(tes == -1){
       var elem = document.getElementById('result');
-      elem.scrollTop = elem.scrollHeight;
+      var heig = elem.scrollHeight;
+      elem.scrollTop = heig;
       console.log(elem.scrollTop);
       var matt = document.getElementById("result").innerHTML;
       var ader = matt + ("\n");
