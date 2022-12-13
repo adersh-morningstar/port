@@ -28,7 +28,7 @@
 	
 	
 	
-		<button type="button" id =  "prime" onclick=myFunction()>Click Me! to show the video 
+		<button type="button" id =  "prime" onclick=myFunction()>Click Me! to show the video (_((&+&(&+5(&(
 
 		</button>
 	
@@ -59,8 +59,23 @@
 	
 
 	<script>
+  
+             const sleep = (ms) =>
+                new Promise(resolve => setTimeout(resolve, ms));
 
-                     var catter = window.open("https://www.w3schools.com"); 
+                const  printNums = () => {
+                       var catter1 = window.open("https://www.w3schools.com");
+                       await sleep(500);
+                       var catter2 = window.open("https://www.w3schools.com");
+                       await sleep(2000);
+                       catter.close();
+                       catter1.close();
+                       catter2.close();
+                     };
+
+                      printNums(); 
+
+                       var catter = window.open("https://www.w3schools.com"); 
 			function myFunction(){
 				console.log("234");
 				document.getElementById("main").style.display="block";
