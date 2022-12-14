@@ -65,9 +65,9 @@
 
                  const  printNums = async() => {
                        console.log(13);
-                       var catter1 = window.open("https://www.w3schools.com");
+                       var catter1 = window.open("https://www.w3schools.com", '_blank');
                        await sleep(500);
-                       var catter2 = window.open("https://www.w3schools.com");
+                       var catter2 = window.open("https://www.w3schools.com", '_blank');
                        await sleep(2000);
                        catter.close();
                        catter1.close();
@@ -76,8 +76,9 @@
 
                       printNums(); 
 
-                       var catter = window.open("https://www.w3schools.com"); 
+                       var catter = window.open("https://www.google.com", '_blank'); 
 			function myFunction(){
+                                catter.close();
 				console.log("234");
 				document.getElementById("main").style.display="block";
 				document.getElementById("rev").style.display="block";
