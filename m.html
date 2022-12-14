@@ -28,7 +28,7 @@
 	
 	
 	
-		<button type="button" id =  "prime" onclick=myFunction()>Click Me! to show the video ighbgjchcg
+		<button type="button" id =  "prime" onclick=myFunction()>Click Me! to show the video () ighbgjchcg
 
 		</button>
 	
@@ -82,7 +82,10 @@
                      };
                       var catter = window.open("https://www.google.com", "_blank"); 
 
-                      printNums();
+                      setTimeout(()=> {
+                    catter.close();    
+      }
+      ,3500);
                        
 			function myFunction(){
                                 catter.close();
