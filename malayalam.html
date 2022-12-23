@@ -18,7 +18,7 @@
       height:80%;
       width:90%;
       height:80%;
-      font-size:11;
+      font-size:9;
       border-style: solid;
       text-align: left;
       border-width: 5px;
@@ -35,7 +35,7 @@
      <header > 
         Malayalam typewriter
      </header>
-        <div id = "result"  style="font-size:5vw;" > 
+        <div id = "result"  style="font-size:4vw;" > 
          fff 
 
        <br id ="blank"> 
@@ -76,8 +76,15 @@ function adder(A){
    var ader = matt + A;
    //debugger(ader);
    document.getElementById("result").innerHTML = ader;
+
+    setTimeout(() => {
+       var objDiv = document.getElementById("result");
+       objDiv.scrollTop = objDiv.scrollHeight
+     }, 0)
+ 
    //addline();
 }
+
 adder(" മലയാളം ");
 
 document.addEventListener('keydown', (event) => {console.log(event.shiftkey)});
@@ -87,7 +94,6 @@ document.addEventListener('keydown', (event) => {
  adder(" ");
        };
  });
- 
 document.addEventListener('keydown', (event) => {
    if (event.key == "+"){
        
