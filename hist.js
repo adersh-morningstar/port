@@ -7,22 +7,18 @@ console.log(urlsm);
 }
 
 
-
-
 // mainloop
 var i = 0
-for (let i = 1; i < 18979867679; i++) {
+for (let i = 1; i < 18999; i++) {
  setTimeout(function timer() {
  myFunction(item(),item());
- }, i * Math.random() * 13000);
+ }, i * Math.random() * 11000);
 
 }
 
 // random url
 
 function item(){
-
-
 
  //1140
 
@@ -76,11 +72,6 @@ function item(){
 
 
 
-
-
-
-
-
  var lift = words[Math.floor(Math.random() * words.length)];
  var liker = addcat(lift);
  console.log(liker);
@@ -88,11 +79,9 @@ function item(){
 }
 
 // add a serch engine to the url 
-
-
 function addcat(url){
 	// random serch engine url
-var engine =  [  [["https://www.bing.com/images/search?q=%20"],[""]] , [["https://www.dogpile.com/serp?qc=images&q="],[""]] , [["https://www.dogpile.com/serp?qc=video&q="],[""]] , [["https://archive.org/search.php?query="],[""]] ,[["https://www.bing.com/videos/search?q="],[""]] ];
+var engine =  [  [["https://www.bing.com/images/search?q=%20"],[""]] , [["https://www.dogpile.com/serp?qc=images&q="],[""]] , [["https://www.dogpile.com/serp?qc=video&q="],[""]] ];
 var mathla = Math.floor(Math.random() * 4);
 var  serch = engine[mathla];
 
