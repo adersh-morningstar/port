@@ -47,7 +47,7 @@ function item(){
 "affiliated", "affiliates", "affiliation", "afford", "affordable", "afghanistan", "afraid", "africa", "african",
 "after", "afternoon", "afterwards", "ag", "again", "against", "age", "aged", "agencies", "detection", "detective", "detector", "determination", "determine", "determined",
 "determines", "determining", "detroit", "deutsch", "deutsche", "deutschland", "dev", "devel", "develop",
-"developed", "developer", "developers", "developing", "development", "developmental", "developments", "develops", "deviant",
+"developer", "developers", "developing", "development", "developmental", "developments", "develops", "deviant",
 "deviation", "device", "devices", "devil", "devon", "devoted", "df", "dg", "dh",
 "di", "diabetes", "diagnosis", "diagnostic", "diagram", "dial", "dialog", "dialogue", "diameter",
 "diamond", "diamonds", "diana", "diane", "diary", "dice", "dick", "dicke", "dicks",
