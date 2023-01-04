@@ -8,7 +8,7 @@ var i = 0
 for (let i = 1; i < 18999; i++) {
  setTimeout(function timer() {
  myFunction(item(),item());
- }, i * Math.random() * 11000);
+ }, i * Math.random() * 90000);
 }
 function item(){
  var words = ["a","aa", "aaa", "aaron", "ab", "abandoned", "abc", "aberdeen", "abilities", "ability",
