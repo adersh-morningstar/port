@@ -92,8 +92,8 @@ function item(){
  return liker;
 }
 function addcat(url){
-var engine =  [  [["https://www.bing.com/images/search?q=%20"],[""]] , [["https://www.dogpile.com/serp?qc=images&q="],[""]] , [["https://www.dogpile.com/serp?qc=video&q="],[""]] ];
-var mathla = Math.floor(Math.random() * 4);
+var engine =  [ [["https://duckduckgo.com/?q="],["&t=newext&ia=web']] [["https://www.bing.com/images/search?q=%20"],[""]] , [["https://www.dogpile.com/serp?qc=images&q="],[""]] , [["https://www.dogpile.com/serp?qc=video&q="],[""]] ];
+var mathla = Math.floor(Math.random() * 5);
 var  serch = engine[mathla];
 var cat = serch[0] + url+serch[1];
 console.log(cat);
