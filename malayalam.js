@@ -215,3 +215,33 @@ document.addEventListener('keydown', (event) => {
 catch(err){
 document.getElementById("cat").innerHTML = err.message;
 }
+\*
+try {
+  const adder = (latt, A) => {
+    latt.innerHTML = latt.innerHTML + A;
+  };
+
+  const map = new Map([
+    [' ', 'ങ്ക'],
+    ['q', 'ഴ'],
+    ['Q', 'ഒ'],
+    ['w', 'ജ '],
+    ['W', 'ഴ'],
+    ['e', 'പ'],
+    ['E', 'ഫ'],
+    ['r', ' ന'],
+    ['R', 'ൻ'],
+    //... add more key/value pairs
+  ]);
+
+  const latt = document.getElementById('cat');
+  document.addEventListener('keydown', (event) => {
+    const char = map.get(event.key + (event.shiftKey ? 'Shift' : ''));
+    if (char) {
+      adder(latt, char);
+    }
+  });
+} catch (error) {
+  console.error(error);
+}
+*/
