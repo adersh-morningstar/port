@@ -85,7 +85,7 @@ function adder(A){
    //addline();
 }
 
-adder(" മലയാളം ");
+adder(" മലയാളം . ");
 
 document.addEventListener('keydown', (event) => {console.log(event.shiftkey)});
 
@@ -94,6 +94,52 @@ document.addEventListener('keydown', (event) => {
  adder(" ");
        };
  });
+
+  const map = new Map([
+        ["q", "ഴ " ] , [ "Q " ,"ഒ"  ] ,
+        ["w", "ജ  " ] , [ "W " ,"ഴ"  ] ,
+        ["e", "പ " ] , [ "E " ,"ഫ"  ] ,
+        ["r", " ന " ] , [ "R " ,"ൻ"  ] ,
+        ["t", "എ " ] , [ "T " ,"ഇ"  ] ,
+        ["y", "റ " ] , [ "Y " ,"്ര"  ] ,
+        ["u", "യ " ] , [ "U " ,"യ്"  ] ,
+        ["i", "വ " ] , [ "I " ,"്വ"  ] ,
+        ["o", "ൂ " ] , [ "O " ,"ൗ"  ] ,
+        ["p", "ദ " ] , [ "P " ,"ധ"  ] ,
+        ["[", ", " ] , [ "{ " ,"ൃ"  ] ,
+        ["]", "ക്ക " ] , [ "} " ,"ട്ട"  ] ,
+        ["a", "മ " ] , [ "| " ,"ഠ"  ] ,
+        ["s", "െ " ] , [ "A " ,"േ"  ] ,
+        ["d", "ക " ] , [ "S " ,"ഖ"  ] ,
+        ["f", "ത " ] , [ "D " ,"ഥ"  ] ,
+        ["g", "ര " ] , [ "F " ,"ർ"  ] ,
+        ["h", "ല " ] , [ "G " ,"ൽ"  ] ,
+        ["j", "ി " ] , [ "H " ,"ീ"  ] ,
+        ["k", "ു " ] , [ "J " ,"ഉ"  ] ,
+        ["l", "ാ " ] , [ "K " ,"അ"  ] ,
+        [";", ".  " ] , [ "L " ,";"  ] ,
+        ["'", "ന്ന " ] , [ ": " ,":"  ] ,
+        ["z", "ഗ " ] , [ "" " ,"ഘ"  ] ,
+        ["x", "ള " ] , [ "Z " ,"ൾ"  ] ,
+        ["c", "സ " ] , [ "X " ,"ശ"  ] ,
+        ["v", "ച " ] , [ "C " ,"ഛ"  ] ,
+        ["b", "ങ " ] , [ "V " ,"ഞ"  ] ,
+        ["n", "ണ " ] , [ "B " ,"ഞ"  ] ,
+        ["m", "ട " ] , [ "N " ,"റ്റ"  ] ,
+        [",", "ഷ " ] , [ "M " ,"ഹ"  ] ,
+        [".", "ഭ " ] , [ "< " ,"ബ"  ] ,
+        ["/", "സ " ] , [ "> " ,"ഢ"  ] ,
+
+
+  ]);
+
+  const latt = document.getElementById('cat');
+  document.addEventListener('keydown', (event) => {
+    const char = map.get(event.key + (event.shiftKey ? 'Shift' : ''));
+    if (char) {
+      adder(latt, char);
+    }
+  });
 document.addEventListener('keydown', (event) => {
    if (event.key == "+"){
        
@@ -103,209 +149,10 @@ document.addEventListener('keydown', (event) => {
      var chu = ("്");
      adder("്");
       }
-   if(event.key == "l"   ){
- adder("ങ്ക")
-      };
-     if(event.key== "q"){
- adder("ഋ");
-       };
-     if(event.key== "w"){
- adder("ജ");
-       };
-     if(event.key== "e"){
- adder("പ");
-       };
-     if(event.key== "r"){
- adder("ന");
-       };
-     if(event.key== "t"){
- adder("എ");
-       };
-     if(event.key== "y"){
- adder("റ");
-       };
-     if(event.key== "u"){
- adder("യ");
-       };
-     if(event.key== "i"){
- adder("വ");
-       };
-     if(event.key== "o"){
- adder("ൂ");
-       };
-     if(event.key== "p"){
- adder("ദ");
-       };
-     if(event.key== "["){
- adder(",");
-       };
-     if(event.key== "]"){
- adder("ക്ക");
-       };
-     if(event.key== "a"){
- adder("മ");
-       };
-     if(event.key== "s"){
- adder("െ.");
-       };
-     if(event.key== "d"){
- adder("ക");
-       };
-     if(event.key== "f"){
- adder("ത");
-       };
-     if(event.key== "g"){
- adder("ര");
-       };
-     if(event.key== "h"){
- adder("ല");
-       };
-     if(event.key== "j"){
- adder("ി");
-       };
-     if(event.key== "k"){
- adder("ു");
-       };
-     if(event.key== "l"){
- adder("ാ");
-       };
-     if(event.key== ";"){
- adder(". ");
-       };
-     if(event.key== "'"){
- adder("ന്ന");
-       };
-     if(event.key== "z"){
- adder("ഗ");
-       };
-     if(event.key== "x"){
- adder("ള");
-       };
-     if(event.key== "c"){
- adder("സ");
-       };
-     if(event.key== "v"){
- adder("ച");
-       };
-     if(event.key== "b"){
- adder("ങ");
-       };
-     if(event.key== "n"){
- adder("ണ");
-       };
-     if(event.key== "m"){
- adder("ട");
-       };
-     if(event.key== ","){
- adder("ഷ");
-       };
-     if(event.key== "."){
- adder("ഭ");
-       };
-     if(event.key== "/"){
- adder("ഡ");
-       };
-     if(event.key== "Q"){
- adder("ഒ");
-       };
-     if(event.key== "W"){
- adder("ഋ");
-       };
-     if(event.key== "E"){
- adder("ഫ");
-       };
-     if(event.key== "R"){
- adder("ൻ");
-       };
-     if(event.key== "T"){
- adder("ഇ");
-       };
-     if(event.key== "Y"){
- adder("റ്");
-       };
-     if(event.key== "U"){
- adder("യ്");
-       };
-     if(event.key== "I"){
- adder("വ്");
-       };
-     if(event.key== "O"){
- adder("ൗ");
-       };
-     if(event.key== "P"){
- adder("ധ");
-       };
-     if(event.key== "{"){
- adder("ൃ");
-       };
-     if(event.key== "}"){
- adder("ട്ട");
-       };
-     if(event.key== "A"){
- adder("ഠ");
-       };
-     if(event.key== "S"){
- adder("േ.");
-       };
-     if(event.key== "D"){
- adder("ഖ");
-       };
-     if(event.key== "F"){
- adder("ഥ");
-       };
-     if(event.key== "G"){
- adder("ർ");
-       };
-     if(event.key== "H"){
- adder("ൽ");
-       };
-     if(event.key== "J"){
- adder("ീ");
-       };
-     if(event.key== "K"){
- adder("ഉ");
-       };
-     if(event.key== "L"){
- adder("അ");
-       };
-     if(event.key== ":"){
- adder(";");
-       };
-     if(event.key== "\""){
- adder(":");
-       };
-     if(event.key== "Z"){
- adder("ഘ");
-       };
-     if(event.key== "X"){
- adder("ൾ");
-       };
-     if(event.key== "C"){
- adder("ശ");
-       };
-     if(event.key== "V"){
- adder("ഛ");
-       };
-     if(event.key== "B"){
- adder("ഞ");
-       };
-     if(event.key== "N"){
- adder("ൺ");
-       };
-     if(event.key== "M"){
- adder("റ്റ");
-       };
-     if(event.key== "<"){
- adder("ഹ");
-       };
-     if(event.key== ">"){
- adder("ബ");
-       };
-     if(event.key== "?"){
- adder("ഢ");
-       };
         
     });
+
+
 
  </script>
     </body>
