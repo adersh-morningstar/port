@@ -135,8 +135,11 @@ document.addEventListener('keydown', (event) => {
 
   const latt = document.getElementById('cat');
   document.addEventListener('keydown', (event) => {
-    const char = map.get(event.key);
-    adder( char);
+    const char1 = map.get(event.key);
+    const char = char1.replace(/\s/g, '');
+    if (typeof char !== 'undefined') {
+        adder( char);
+     };
   });
 document.addEventListener('keydown', (event) => {
    if (event.key == "+"){
