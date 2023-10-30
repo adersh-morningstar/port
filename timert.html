@@ -1,7 +1,9 @@
+
+
 <!DOCTYPE html>
  <html>
    <head>
-      <title>Timer T 2</title>
+      <title>Timer</title>
       <link rel="shortcut icon" type="image/x-icon" href=" https://static.wikia.nocookie.net/debatesjungle/images/4/47/Kanna.png/revision/latest?cb=20200126185655 " />
       
 <script  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"> 
@@ -17,7 +19,7 @@
            padding-top: 50px;
            padding-right: 5px;
            padding-bottom: 50px;
-           padding-left: 6px;
+           padding-left: 5px;
            
                }
        
@@ -50,20 +52,15 @@
         <div id ="subt">
 
         </div>
-     <div id='test'>
 
-     </div>
 <script>
-
-"""
-var  deadline = new Date("October 30, 2021 19:59:59").getTime(); 
-var starter = new Date("May 30, 2024 23:59:59").getTime(); 
-"""
-
 var starter = new Date("October 25, 2023 23:59:59").getTime(); 
 
 var deadline = new Date("dec 22, 2023 19:59:59").getTime(); 
- 
+
+// var  deadline = new Date("december 31, 2024 19:59:59").getTime(); 
+// var starter = new Date("October 25, 2021 23:59:59").getTime(); 
+
 var difference  = deadline - starter;
 
 var fonc = setInterval(function() { 
@@ -120,9 +117,7 @@ var now = new Date().getTime();
 var past = now - starter;
 var t = deadline - now; 
 
-var tester = starter + deadline + difference ;
 
-document.getElementById("myChart").innerHTML = tester ;
 var bar1 = ((t/difference)*100);
 var bar2 = bar1 * 3.6;
 
@@ -136,7 +131,7 @@ var myChart = new Chart(ctx, {
       { label: '# time', 
         data: [(100-bar1),bar1], 
         backgroundColor :['rgba(255, 99, 132, 0.2)', 
-                'rgba(154, 162, 235, 0.2)', 
+                'rgba(54, 162, 235, 0.2)', 
                 'rgba(255, 206, 86, 0.2)', 
                
                 ], 
@@ -162,4 +157,4 @@ borderColor: [
 
 </script>
 </body>
-</html>
+ </html>
